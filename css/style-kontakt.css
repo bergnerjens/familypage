@@ -1,0 +1,208 @@
+body {
+    background-color: rgb(175, 157, 111, 0.4);
+    color: lavenderblush;
+}
+
+header {
+
+    color: grey;
+    padding: 1rem;
+    text-align: center;
+}
+
+img {
+    border-radius: 10px;
+    z-index: 1;
+}
+
+figcaption {
+    position: relative;
+    margin-top: -2rem;
+    color: lavenderblush;
+    background: rgb(229, 165, 232, 0.40);
+
+}
+
+
+main {
+    color: transparent;
+    height: 800px;
+    background: transparent;
+    width: 100%;
+}
+
+main::after {
+    position: absolute;
+    content: "";
+    background-image: url(../images/familie.jpg);
+    background-size: cover;
+    background-size: 100%;
+    background-position: 65% 65%;
+    width: 100%;
+    inset: 0px;
+    opacity: 0.2;
+    margin-top: 300px;
+    height: 800px;
+    z-index: -100;
+
+}
+
+.super-inputs {
+    width: 50%;
+}
+
+.div-inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+
+.header-inner {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: flex-left;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+
+.nav-home {
+    display: flex;
+    justify-content: center;
+    width: 90px;
+    color: rgb(147, 85, 150);
+    background-color: transparent;
+    height: 20px;
+    align-items: center;
+    margin-right: 2rem;
+    border-radius: 10px;
+    border-color: rgb(147, 85, 150);
+    border-width: 0.5px;
+    border-style: solid;
+    margin-top: 4rem;
+
+}
+
+.nav-familie {
+    display: flex;
+    justify-content: center;
+    width: 90px;
+    color: rgb(147, 85, 150);
+    background-color: transparent;
+    height: 20px;
+    align-items: center;
+    margin-right: 2rem;
+    border-radius: 10px;
+    border-color: rgb(147, 85, 150);
+    border-width: 0.5px;
+    border-style: solid;
+    margin-top: 4rem;
+
+}
+
+.nav-hobbies {
+    display: flex;
+    justify-content: center;
+    width: 90px;
+    color: rgb(147, 85, 150);
+    background-color: transparent;
+    height: 20px;
+    align-items: center;
+    margin-right: 2rem;
+    border-radius: 10px;
+    border-color: rgb(147, 85, 150);
+    border-width: 0.5px;
+    border-style: solid;
+    margin-top: 4rem;
+
+}
+
+.nav-kontakt {
+    display: flex;
+    justify-content: center;
+    width: 90px;
+    color: rgb(251, 250, 251);
+    background-color: rgb(134, 127, 134);
+    height: 20px;
+    align-items: center;
+    margin-right: 2rem;
+    border-radius: 10px;
+    border-color: rgb(147, 85, 150);
+    border-width: 0.5px;
+    border-style: solid;
+    margin-top: 4rem;
+
+}
+
+.nav-home:hover {
+    background: #f7f4f4;
+}
+
+.nav-familie:hover {
+    background: #f7f4f4;
+}
+
+.nav-hobbies:hover {
+    background: #f7f4f4;
+}
+
+.nav-kontakt:hover {
+    background: transparent;
+}
+
+.main-navigation {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.site-main {
+    color: black;
+}
+
+footer {
+
+    padding: 5rem;
+}
+
+.nav-footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+}
+
+button {
+    background-color: rgb(195, 144, 195);
+    color: whitesmoke;
+    padding: 0.5rem;
+    border-style: dotted;
+    font-size: inherit;
+    cursor: pointer;
+    margin-top: 1rem;
+
+}
+
+.impress {
+    display: flex;
+    justify-content: center;
+    width: 90px;
+    color: rgb(147, 85, 150);
+    background-color: transparent;
+    height: 20px;
+    align-items: center;
+    margin-right: 2rem;
+    border-radius: 10px;
+    border-color: rgb(147, 85, 150);
+    border-width: 0.5px;
+    border-style: solid;
+}
