@@ -1,10 +1,10 @@
 body {
-    background-color: transparent;
+    background-color: rgb(175, 157, 111, 0.4);
     color: lavenderblush;
 }
 
 header {
-    background-color: white;
+
     color: grey;
     padding: 1rem;
     text-align: center;
@@ -20,16 +20,31 @@ figcaption {
     margin-top: -2rem;
     color: lavenderblush;
     background: rgb(229, 165, 232, 0.40);
-    z-index: 100;
+
 }
 
 
 main {
-    margin-top: -1.5rem;
     color: transparent;
+    height: 920px;
+    background: transparent;
+    width: 100%;
+}
+
+main::after {
+    position: absolute;
+    content: "";
     background-image: url(../images/familie.jpg);
     background-size: cover;
     background-size: 100%;
+    background-position: 65% 65%;
+    width: 100%;
+    inset: 0px;
+    opacity: 0.7;
+    margin-top: 300px;
+    height: 920px;
+    z-index: -100;
+
 }
 
 a {
@@ -38,18 +53,37 @@ a {
 }
 
 .main-header {
-    color: black;
+    color: white;
     text-shadow: 3px 3px 4px #505050;
     text-align: center;
-
+    z-index: 100;
 
 }
 
-.main-h1 {
+.header-h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
     color: rgb(40, 8, 62);
     text-shadow: 5px 5px 6px #08080828;
-
+    font-family: monospace;
+    overflow: hidden;
+    height: 1.1em;
+    word-wrap: break-word;
+    white-space: nowrap;
+    animation: typing 4s steps(48) forwards;
 }
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 48ch;
+    }
+}
+
 
 .header-inner {
     display: flex;
@@ -59,6 +93,8 @@ a {
 
 .navigation {
     display: flex;
+    justify-content: flex-left;
+    width: 100%;
     margin-top: 1rem;
 }
 
@@ -66,17 +102,228 @@ a {
 .nav-link {
     display: flex;
     justify-content: center;
+    width: 90px;
+    color: rgb(147, 85, 150);
+    background-color: transparent;
+    height: 20px;
+    align-items: center;
+    margin-right: 2rem;
+    border-radius: 10px;
+    border-color: rgb(147, 85, 150);
+    border-width: 0.5px;
+    border-style: solid;
+    margin-top: 4rem;
+
+}
+
+.nav-link:hover {
+    background: #505050;
+}
+
+.main-navigation {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.parents {
+    display: flex;
+    justify-content: center;
+}
+
+.children {
+    display: flex;
+    justify-content: center;
+}
+
+.cats {
+    display: flex;
+    justify-content: center;
+}
+
+.main-dad {
+    display: flex;
+    justify-content: center;
     width: 180px;
-    color: rgb(229, 165, 232);
-    background-color: bisque;
+    color: white;
+    background-color: rgba(171, 128, 43, 0.2);
     height: 40px;
     align-items: center;
     margin-right: 2rem;
     border-radius: 10px;
+    border-color: rgb(168, 103, 28);
+    border-width: 0.5px;
+    border-style: solid;
+    margin-top: 4rem;
+}
+
+.main-dad:hover {
+    background: rgb(227, 199, 123);
+}
+
+.main-mum:hover {
+    background: rgb(227, 199, 123);
+}
+
+.main-till:hover {
+    background: rgb(227, 199, 123);
+}
+
+.main-henri:hover {
+    background: rgb(227, 199, 123);
+}
+
+.main-finn:hover {
+    background: rgb(227, 199, 123);
+}
+
+.main-lilli:hover {
+    background: rgb(227, 199, 123);
+}
+
+.main-rocky:hover {
+    background: rgb(227, 199, 123);
+}
+
+.main-chica:hover {
+    background: rgb(227, 199, 123);
+}
+
+.main-mum {
+    display: flex;
+    justify-content: center;
+    width: 180px;
+    color: white;
+    background-color: rgba(171, 128, 43, 0.2);
+    height: 40px;
+    align-items: center;
+    margin-right: 2rem;
+    border-radius: 10px;
+    border-color: rgb(168, 103, 28);
+    border-width: 0.5px;
+    border-style: solid;
+    margin-top: 4rem;
+}
+
+.main-till {
+    display: flex;
+    justify-content: center;
+    width: 180px;
+    color: white;
+    background-color: rgba(171, 128, 43, 0.2);
+    height: 40px;
+    align-items: center;
+    margin-right: 2rem;
+    border-radius: 10px;
+    border-color: rgb(168, 103, 28);
+    border-width: 0.5px;
+    border-style: solid;
+    margin-top: 4rem;
+}
+
+.main-henri {
+    display: flex;
+    justify-content: center;
+    width: 180px;
+    color: white;
+    background-color: rgba(171, 128, 43, 0.2);
+    height: 40px;
+    align-items: center;
+    margin-right: 2rem;
+    border-radius: 10px;
+    border-color: rgb(168, 103, 28);
+    border-width: 0.5px;
+    border-style: solid;
+    margin-top: 4rem;
+}
+
+.main-finn {
+    display: flex;
+    justify-content: center;
+    width: 180px;
+    color: white;
+    background-color: rgba(171, 128, 43, 0.2);
+    height: 40px;
+    align-items: center;
+    margin-right: 2rem;
+    border-radius: 10px;
+    border-color: rgb(168, 103, 28);
+    border-width: 0.5px;
+    border-style: solid;
+    margin-top: 4rem;
+}
+
+.main-lilli {
+    display: flex;
+    justify-content: center;
+    width: 180px;
+    color: white;
+    background-color: rgba(171, 128, 43, 0.2);
+    height: 40px;
+    align-items: center;
+    margin-right: 2rem;
+    border-radius: 10px;
+    border-color: rgb(168, 103, 28);
+    border-width: 0.5px;
+    border-style: solid;
+    margin-top: 4rem;
+}
+
+.main-rocky {
+    display: flex;
+    justify-content: center;
+    width: 180px;
+    color: white;
+    background-color: rgba(171, 128, 43, 0.2);
+    height: 40px;
+    align-items: center;
+    margin-right: 2rem;
+    border-radius: 10px;
+    border-color: rgb(168, 103, 28);
+    border-width: 0.5px;
+    border-style: dotted;
+    margin-top: 4rem;
+}
+
+.main-chica {
+    display: flex;
+    justify-content: center;
+    width: 180px;
+    color: white;
+    background-color: rgba(171, 128, 43, 0.2);
+    height: 40px;
+    align-items: center;
+    margin-right: 2rem;
+    border-radius: 10px;
+    border-color:  rgb(168, 103, 28);
+    border-width: 0.5px;
+    border-style: solid;
+    margin-top: 4rem;
+}
+
+footer {
+
+    padding: 1rem;
+}
+
+.nav-footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
 }
 
 
-.nav-link:hover {
-    background: #505050;
-    
+.impress {
+    display: flex;
+    justify-content: center;
+    width: 90px;
+    color: rgb(147, 85, 150);
+    background-color: transparent;
+    height: 20px;
+    align-items: center;
+    margin-right: 2rem;
+    border-radius: 10px;
+    border-color: rgb(147, 85, 150);
+    border-width: 0.5px;
+    border-style: solid;
 }
